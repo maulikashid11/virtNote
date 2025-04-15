@@ -23,7 +23,7 @@ const Signup = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     const { name, email, password } = details
-    fetch('http://localhost:3000/user/signup', {
+    fetch('https://virtnote.onrender.com/user/signup', {
       method: "POST",
       headers: {
         "content-type": "application/json"

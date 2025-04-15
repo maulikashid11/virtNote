@@ -22,7 +22,7 @@ const Login = () => {
     e.preventDefault()
     const { email, password } = details
     try {
-      fetch('http://localhost:3000/user/login', {
+      fetch('https://virtnote.onrender.com/user/login', {
         method: "POST",
         headers: {
           "content-type": "application/json"
