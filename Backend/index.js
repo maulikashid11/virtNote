@@ -13,7 +13,7 @@ const port = process.env.PORT || 3000
 connectToDB()
 
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://virt-note.vercel.app/',
     credentials: true
 }))
 app.use(express.urlencoded({ extended: true }))
