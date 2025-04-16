@@ -22,7 +22,7 @@ const Login = () => {
     e.preventDefault()
     const { email, password } = details
     try {
-      fetch('https://virt-note-server.vercel.app//user/login', {
+      fetch('https://virt-note-server.vercel.app/user/login', {
         method: "POST",
         headers: {
           "content-type": "application/json"
