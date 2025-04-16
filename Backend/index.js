@@ -13,14 +13,15 @@ const port = process.env.PORT || 3000
 connectToDB()
 
 app.use(cors({
-    origin: 'https://virt-note.vercel.app/',
+    origin: ["https://virt-note.vercel.app"],
+    methods: ["POST", "GET", "PUT", "DELETE"],
     credentials: true
 }))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.use(cookieParser())
 
-app.get('/',(req,res)=>{
+app.get('/', (req, res) => {
     res.json('Hello');
 })
 app.use('/user', user)
