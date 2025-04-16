@@ -20,6 +20,9 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.use(cookieParser())
 
+app.get('/',(req,res)=>{
+    res.json('Hello');
+})
 app.use('/user', user)
 app.use('/note', note)
 
