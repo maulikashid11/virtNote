@@ -26,7 +26,7 @@ const Profile = () => {
   }, [])
 
   function fetchAllNotes() {
-    fetch('https://virtnote.onrender.com/note/fetchallnotes', {
+    fetch('https://virt-note-server.vercel.app/note/fetchallnotes', {
       method: "GET",
       headers: {
         "content-type": "application/json",
@@ -42,7 +42,7 @@ const Profile = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     const { title, description } = details
-    fetch('https://virtnote.onrender.com/note/addnote', {
+    fetch('https://virt-note-server.vercel.app/note/addnote', {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -63,7 +63,7 @@ const Profile = () => {
       })
   }
   const deleteNote = (id) => {
-    fetch('https://virtnote.onrender.com/note/deletenote', {
+    fetch('https://virt-note-server.vercel.app/note/deletenote', {
       method: "DELETE",
       headers: {
         "content-type": "application/json",
@@ -81,7 +81,7 @@ const Profile = () => {
   }
   const editNote = (e) => {
     e.preventDefault()
-    fetch('https://virtnote.onrender.com/note/editnote', {
+    fetch('https://virt-note-server.vercel.app/note/editnote', {
       method: "PUT",
       headers: {
         "content-type": "application/json",

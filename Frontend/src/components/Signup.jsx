@@ -23,7 +23,7 @@ const Signup = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     const { name, email, password } = details
-    fetch('https://virtnote.onrender.com/user/signup', {
+    fetch('https://virt-note-server.vercel.app//user/signup', {
       method: "POST",
       headers: {
         "content-type": "application/json"
